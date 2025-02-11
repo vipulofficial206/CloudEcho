@@ -2,7 +2,7 @@ const apiurl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=
 let whplace = document.getElementById("wh-place");
 let whtargetbox = document.getElementById("wh-target-box");
 let whicon = document.querySelector(".wh-icon");
-apiid ="834b17ab37a47b313b2dfeafeac7f9ff";
+
 
 async function generatewheater1() {
   if (!whplace.value.trim()) {
