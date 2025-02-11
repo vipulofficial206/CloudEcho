@@ -11,7 +11,7 @@ async function generatewheater1() {
   }
 
   try {
-    const response = await fetch(apiurl + encodeURIComponent(whplace.value) + "&appid=" + apiid);
+    const response = await fetch(apiurl + encodeURIComponent(whplace.value) + "&appid=" + numberi1);
 
     if (!response.ok) {
       throw new Error(`HTTP Error: ${response.status}`);
