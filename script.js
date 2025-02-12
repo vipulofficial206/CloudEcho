@@ -3,6 +3,11 @@ let whplace = document.getElementById("wh-place");
 let whtargetbox = document.getElementById("wh-target-box");
 let whicon = document.querySelector(".wh-icon");
 
+function decodeAPIKey(encodedKey) {
+  return atob(encodedKey);
+}
+
+apiid = decodeAPIKey(numberi1);
 
 async function generatewheater1() {
   if (!whplace.value.trim()) {
@@ -11,7 +16,7 @@ async function generatewheater1() {
   }
 
   try {
-    const response = await fetch(apiurl + encodeURIComponent(whplace.value) + "&appid=" + numberi1);
+    const response = await fetch(apiurl + encodeURIComponent(whplace.value) + "&appid=" + apiid);
 
     if (!response.ok) {
       throw new Error(`HTTP Error: ${response.status}`);
