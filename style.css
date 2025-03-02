@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.wheater-box{
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(135deg ,#00feba ,#5b548a); */
+    background-color: wheat;
+    color: whitesmoke;
+    margin: 1% auto;
+    border-radius: 20px;
+    padding: 3% 3%;
+    text-align: center;
+    
+}
+.wh-top h1{
+    padding-bottom: 5px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.wh-top p{
+    padding-bottom: 15px;
+    color: black;
+    font-weight: 600;
+}
+.wh-search-bar{
+    display: flex;
+
+}
+.wh-search-bar input{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #5b548a ;
+    padding-inline-start: 8%;
+}
+.wh-search-bar ::placeholder{
+    line-height: 40px; /* Matches input height */
+    padding-left: 10px;
+}
+.wh-search-bar button {
+    width: 45px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#imagwh {
+    width: 16px; /* Adjusted for better visibility */
+    height: auto;
+}
+
+
+.weatherinfo{
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.weatherinfo img{
+    width: 40%;
+}
+.extra-wheater h1{
+    font-size: 20px;
+    color: black;
+}
+h1{
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+}
+
+.extra-wheater{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+}
+.humidity{
+    padding-right: 15%;
+}
+.humidity img{
+    width: 60px;
+}
+.wind-speed img{
+    width: 60px;
+}
+
+#wh-target-box {
+    height: 0;
+    opacity: 0;
+    overflow: hidden; /* Ensures content doesn't cause sudden jumps */
+    transition: opacity 1.5s ease-in-out, height 1.5s ease-in-out;
+}
+
+#wh-target-box.show-img {
+    height: auto;  /* Allows dynamic expansion */
+    opacity: 1;
+}
+.whtemp{
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .wheater-box {
+        width: 95%;
+        padding: 5%;
+    }
+    #wh-target-box{
+        color: black;
+    }
+    .humidity, .wind-speed {
+        padding-right: 0;
+        margin-bottom: 10px; /* Adds spacing between elements */
+    }
+    .wheater-box{
+        background-color: transparent;
+    }
+    .extra-wheater{
+        color: whitesmoke;
+    }
+    .whtemp{
+        color: whitesmoke;
+    }
+}
+

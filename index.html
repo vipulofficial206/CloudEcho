@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted playsinline class="video-bg">
+        <source src="https://videos.pexels.com/video-files/1893623/1893623-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>    
+    <div class="wheater-box"> 
+        <div class="wh-top">
+        <h1>CloudEcho</h1>
+        <p>– The voice of the skies</p>
+    </div>
+        <div class="wh-search-bar">
+            <input id="wh-place" class="wh-place" type="text" placeholder="Enter city Name" spellcheck="false">
+            <button onclick="generatewheater1()"><i id="imagwh" class='bx bx-search'></i></button>
+        </div>
+        <div id="wh-target-box">
+        <div class="weatherinfo">
+            <h1 class="wh-weathertype"> climate</h1>
+            <img src="" id="wh-icon" class="wh-icon" >
+            <div class="whtemp" >Temp</div>
+            <h1 class="whcity">place</h1>
+            <!-- https://videos.pexels.com/video-files/30386231/13022181_2560_1440_60fps.mp4 -->
+        </div>
+        <div class="extra-wheater">
+        <div class="humidity">
+            <img src="https://cdn-icons-png.freepik.com/256/11682/11682360.png?semt=ais_hybrid" alt="great" class="wh-icon" aria-hidden="true">
+            <div class="wh-humidty">humidity Level</div>
+            <h1>humidity</h1>
+        </div>
+        <div class="wind-speed">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" alt="great" class="wh-icon">
+            <div class="wh-windspeed">wind Speed Level</div>
+            <h1>wind Speed</h1>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="s1.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
